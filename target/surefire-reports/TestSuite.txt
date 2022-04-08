@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.793 sec <<< FAILURE! - in TestSuite
+screenshot(sampletext.SampleText)  Time elapsed: 10.204 sec  <<< FAILURE!
+java.lang.ArithmeticException: / by zero
+	at sampletext.SampleText.screenshot(SampleText.java:30)
+

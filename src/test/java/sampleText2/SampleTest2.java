@@ -1,4 +1,4 @@
-package sampletext;
+package sampleText2;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,24 +12,23 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SampleText {
+public class SampleTest2 {
 	
-@Test
-	public void screenshot() throws IOException, InterruptedException {
+	@Test
+	public void screenshot() throws IOException {
 		// TODO Auto-generated method stub
 		WebDriverManager.chromedriver().setup();
 		WebDriver wd =new ChromeDriver();
 		wd.manage().window().maximize();
-		wd.get("https://www.google.com/");
+		wd.get("https://www.bing.com/");
 		 File src =((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
 	        
 	        
-	        FileHandler.copy(src,new File("C:\\Users\\prasa\\eclipse-workspace\\gitText\\screenshot\\image.png"));
+	        FileHandler.copy(src,new File("C:\\Users\\prasa\\eclipse-workspace\\gitText\\screenshot\\bing.png"));
 	        
-		Thread.sleep(3000);
-		int i=1/0;
-		wd.close();
+		
 
 	}	
+
 
 }
